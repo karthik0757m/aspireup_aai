@@ -1,0 +1,41 @@
+# Deploy both agents as separate web services from the repository root.
+# Supply secrets in the Render dashboard; never commit their values.
+services:
+  - type: web
+    name: faultsense-agent
+    runtime: python
+    plan: free
+    rootDir: agent_1
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m streamlit run app.py --server.address 0.0.0.0 --server.port $PORT --server.headless true --browser.gatherUsageStats false
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.10
+      - key: GEMINI_MODEL
+        value: gemini-3.8-flash
+      - key: GEMINI_EMBEDDING_MODEL
+        value: gemini-embedding-001
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: DEMO_ACCESS_CODE
+        sync: false
+  - type: web
+    name: buildwise-agent
+    runtime: python
+    plan: free
+    rootDir: agent_2
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m streamlit run app.py --server.address 0.0.0.0 --server.port $PORT --server.headless true --browser.gatherUsageStats false
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.10
+      - key: GEMINI_MODEL
+        value: gemini-3.8-flash
+      - key: GEMINI_EMBEDDING_MODEL
+        value: gemini-embedding-001
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: DEMO_ACCESS_CODE
+        sync: false
