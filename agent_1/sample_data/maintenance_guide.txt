@@ -1,0 +1,17 @@
+FAULTSENSE SYNTHETIC TRAINING MANUAL — MOTOR DEMO M1
+This is an authored teaching fixture, not a manufacturer manual or an operating standard.
+
+Section 1. Demo limits and measurement conventions
+Use temperature in degrees Celsius, overall vibration velocity in mm/s RMS, RMS current in amperes, and rotational speed in RPM. In this synthetic exercise, investigate readings above 80 C, 4.5 mm/s RMS, or 12 A. These limits must not be transferred to other equipment. Readings are one-minute observations, not vibration waveform samples.
+
+Section 2. Excess load and current
+When temperature and current both increase during load, compare operating load and supply conditions with ratings. High current can accompany overload or electrical supply issues. Aggregate current alone cannot identify a specific electrical fault. Obtain phase measurements and load history to distinguish hypotheses.
+
+Section 3. Bearing, alignment and vibration
+Elevated overall vibration may result from imbalance, misalignment or bearing condition. A single overall vibration metric cannot distinguish these causes. Obtain a vibration spectrum, speed reference and bearing inspection evidence using approved maintenance procedures.
+
+Section 4. Cooling and temperature
+High temperature with a restricted airflow path can suggest a cooling problem. Check ambient conditions and cooling maintenance records. A temperature reading alone is not proof of ventilation failure.
+
+Section 5. Safe investigation and evidence
+This software cannot operate machinery. Qualified personnel must follow equipment isolation and site procedures before inspections. A lack of threshold violations is not evidence that all failure modes are absent. Record supporting and contradicting evidence before confirming a root cause.
