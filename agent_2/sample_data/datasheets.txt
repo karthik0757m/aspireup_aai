@@ -1,0 +1,32 @@
+BUILDWISE SYNTHETIC COMPONENT DATASHEETS
+All part IDs, specifications and prices below are fictional educational fixtures, not purchasing recommendations.
+
+PART CTRL-W1
+part_id: CTRL-W1; category: controller; price_inr: 650; voltage_min_v: 3.0; voltage_max_v: 3.6; logic_v: 3.3; interface: I2C|SPI; wifi: true; active_ma: 180; sleep_ma: 0.08; capacity_mah: 0; nominal_v: 0; output_v: 0; efficiency: 0; max_output_ma: 0; quiescent_ma: 0; stock: 20
+
+PART CTRL-W2
+part_id: CTRL-W2; category: controller; price_inr: 950; voltage_min_v: 3.0; voltage_max_v: 3.6; logic_v: 3.3; interface: I2C|SPI; wifi: true; active_ma: 95; sleep_ma: 0.02; capacity_mah: 0; nominal_v: 0; output_v: 0; efficiency: 0; max_output_ma: 0; quiescent_ma: 0; stock: 12
+
+PART CTRL-N1
+part_id: CTRL-N1; category: controller; price_inr: 250; voltage_min_v: 3.0; voltage_max_v: 3.6; logic_v: 3.3; interface: I2C; wifi: false; active_ma: 20; sleep_ma: 0.01; capacity_mah: 0; nominal_v: 0; output_v: 0; efficiency: 0; max_output_ma: 0; quiescent_ma: 0; stock: 15
+
+PART TEMP-I1
+part_id: TEMP-I1; category: sensor; price_inr: 180; voltage_min_v: 2.7; voltage_max_v: 3.6; logic_v: 3.3; interface: I2C; wifi: false; active_ma: 1; sleep_ma: 0.002; capacity_mah: 0; nominal_v: 0; output_v: 0; efficiency: 0; max_output_ma: 0; quiescent_ma: 0; stock: 30
+
+PART TEMP-X5
+part_id: TEMP-X5; category: sensor; price_inr: 120; voltage_min_v: 4.5; voltage_max_v: 5.5; logic_v: 5.0; interface: I2C; wifi: false; active_ma: 2; sleep_ma: 0.1; capacity_mah: 0; nominal_v: 0; output_v: 0; efficiency: 0; max_output_ma: 0; quiescent_ma: 0; stock: 10
+
+PART BAT-2A
+part_id: BAT-2A; category: battery; price_inr: 450; voltage_min_v: 3.0; voltage_max_v: 4.2; logic_v: 0; interface: ; wifi: false; active_ma: 0; sleep_ma: 0; capacity_mah: 2000; nominal_v: 3.7; output_v: 0; efficiency: 0; max_output_ma: 0; quiescent_ma: 0; stock: 20
+
+PART BAT-4A
+part_id: BAT-4A; category: battery; price_inr: 780; voltage_min_v: 3.0; voltage_max_v: 4.2; logic_v: 0; interface: ; wifi: false; active_ma: 0; sleep_ma: 0; capacity_mah: 4000; nominal_v: 3.7; output_v: 0; efficiency: 0; max_output_ma: 0; quiescent_ma: 0; stock: 10
+
+PART REG-BB
+part_id: REG-BB; category: regulator; price_inr: 260; voltage_min_v: 2.7; voltage_max_v: 5.0; logic_v: 0; interface: ; wifi: false; active_ma: 0; sleep_ma: 0; capacity_mah: 0; nominal_v: 0; output_v: 3.3; efficiency: 0.9; max_output_ma: 500; quiescent_ma: 0.03; stock: 15
+
+PART REG-HI
+part_id: REG-HI; category: regulator; price_inr: 90; voltage_min_v: 4.5; voltage_max_v: 12.0; logic_v: 0; interface: ; wifi: false; active_ma: 0; sleep_ma: 0; capacity_mah: 0; nominal_v: 0; output_v: 3.3; efficiency: 0.8; max_output_ma: 100; quiescent_ma: 0.2; stock: 10
+
+DESIGN NOTES
+A Wi-Fi controller must include transmission and connection time in active duration. Battery runtime is nominal energy times usable fraction divided by average input power. A regulator must cover the entire battery voltage range, not just nominal voltage. Allow 20 percent output-current headroom in this exercise. Logic voltage and interface must both match. No charger or battery protection circuit is included in this simplified bill of materials; those remain required design work for physical construction.
